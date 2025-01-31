@@ -48,6 +48,48 @@
       </div>
     </header>
 
+    <div class="mobile-navigation">
+      <label for="checkboxID" class="mobile-navigation__burger">
+        <svg class="mobile-navigation__burger-icon" aria-label="burger icon">
+          <use href="assets/sprites.svg#burger-icon"></use>
+        </svg>
+      </label>
+
+      <input
+        id="checkboxID"
+        type="checkbox"
+        class="mobile-navigation__toggler"
+      />
+
+      <nav class="mobile-navigation__menu nav">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="#work" class="nav__list-item-link">How we work</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#about" class="nav__list-item-link">About us</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#expirience" class="nav__list-item-link">Our expirience</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#testimonials" class="nav__list-item-link">Testimonials</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#contacts" class="nav__list-item-link">Form</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#form" class="nav__list-item-link">Contacts</a>
+          </li>
+        </ul>
+        <label for="checkboxID" class="nav__close">
+          <svg class="nav__close-icon" aria-label="cross icon">
+            <use href="assets/sprites.svg#cross-icon"></use>
+          </svg>
+        </label>
+      </nav>
+    </div>
+
     <main aria-label="main content">
       <section class="hero-section" aria-label="hero section">
         <div class="container">
@@ -80,7 +122,7 @@
         </div>
       </section>
 
-      <section class="work-section" aria-label="work section">
+      <section id="work" class="work-section" aria-label="work section">
         <div class="container">
           <div class="work">
             <h2 class="work__title">How we work</h2>
@@ -178,7 +220,7 @@
 
       <hr class="devider" />
 
-      <section class="about-section" aria-label="section about">
+      <section id="about" class="about-section" aria-label="section about">
         <div class="container">
           <div class="about">
             <div class="about__quality">
@@ -212,6 +254,7 @@
       </section>
 
       <section
+        id="container"
         class="experience-section"
         aria-label="experience section content"
       >
@@ -256,6 +299,7 @@
       </section>
 
       <section
+        id="testimonials"
         class="testimonials-section"
         aria-label="testimonials section content"
       >
@@ -301,7 +345,7 @@
         </div>
       </section>
 
-      <section class="form-section" aria-label="form section">
+      <section id="form" class="form-section" aria-label="form section">
         <div class="container">
           <div class="form-section__wrapper">
             <form
@@ -346,5 +390,40 @@
         <div class="form-section__bg-cloud cloud--right"></div>
       </section>
     </main>
+
+    <footer class="footer-section" aria-label="contacts section" id="contacts">
+      <div class="container">
+        <div class="footer">
+          <div class="footer__terms">
+            <div class="footer__terms-links">
+              <a href="#" class="footer__terms-link"> Terms of Use </a>
+              <a href="#" class="footer__terms-link"> Privacy Policy </a>
+            </div>
+
+            <div class="footer__terms-rights">
+              © CloudFlex 2024. All Rights Reserved.
+            </div>
+          </div>
+
+          <address class="footer__contacts">
+            <a href="https://linkedin.com" target="_blank">
+              <svg class="footer__contacts-icon" aria-label="linkedin icon">
+                <use href="assets/sprites.svg#linkedin-icon"></use>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank">
+              <svg class="footer__contacts-icon" aria-label="facebook icon">
+                <use href="assets/sprites.svg#facebook-icon"></use>
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <svg class="footer__contacts-icon" aria-label="instagram icon">
+                <use href="assets/sprites.svg#instagram-icon"></use>
+              </svg>
+            </a>
+          </address>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
