@@ -4,7 +4,7 @@
   "description": "landing page",
   "source": "index.html",
   "scripts": {
-    "sass:watch": "sass --watch styles:dist"
+    "sass:watch": "sass --style=compressed --watch styles:dist"
   },
   "author": "Lev",
   "license": "ISC",
